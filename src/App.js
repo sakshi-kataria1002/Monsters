@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const user = [{ //array containing objects
+    fName: "Sakshi",
+    lName: "Kataria"
+}, {
+    fName: "Vikash",
+    lName: "Chauhan"
+}]
+const App = () => {
+    let a = 10
+    let b = 11
+    return (
+        <div>
+            <h1>
+                Monsters App
+            </h1>
+            <p>Building CRUD App</p>
+            <p>Some Calculation: {a*b}</p>
+            { //we are doing data binding in {}
+                user.map(
+                    function display(element, index){
+                        return (<div>
+                                <p>{element.fName}</p>
+                                <p>{element.lName}</p>
+                            </div>)
+                    }
+                )
+            }
+        </div>
+    )
 }
 
-export default App;
+export default App

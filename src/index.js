@@ -1,17 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react" //'react'-> absolute path
+//import React from "C:/Users/Admin/OneDrive/Desktop/monster/node_modules/@types/react/index" //"react" -> absolute path
+//import React from "../node_modules/@ampproject/remapping/package.json" //'react'-> relative path
+import ReactDOM from 'react-dom/client'
+//import '../public/test'
+import App from "./App"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+
+root.render(<><App/></>) //It is rendering from JS6 to DOM
