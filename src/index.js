@@ -1,18 +1,12 @@
-import React from "react" //'react'-> absolute path
-//import React from "C:/Users/Admin/OneDrive/Desktop/monster/node_modules/@types/react/index" //"react" -> absolute path
-//import React from "../node_modules/@ampproject/remapping/package.json" //'react'-> relative path
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-//import '../public/test'
-import App from "./App"
-import Home from "./Home"
-
+import App from './pages/home/App'
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-
 root.render(
     <>
-        <App/>
-        <Home/>
+        <App />
     </>
-) //It is rendering from JS6 to DOM
+)
