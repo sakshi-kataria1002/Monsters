@@ -2,8 +2,8 @@ const user = [{ //array containing objects
     fName: "Sakshi",
     lName: "Kataria"
 }, {
-    fName: "Vikash",
-    lName: "Chauhan"
+    fName: "Govind",
+    lName: "Kaushik"
 }]
 const App = () => {
     let a = 10

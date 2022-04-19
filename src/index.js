@@ -4,9 +4,15 @@ import React from "react" //'react'-> absolute path
 import ReactDOM from 'react-dom/client'
 //import '../public/test'
 import App from "./App"
+import Home from "./Home"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
-root.render(<><App/></>) //It is rendering from JS6 to DOM
+root.render(
+    <>
+        <App/>
+        <Home/>
+    </>
+) //It is rendering from JS6 to DOM
