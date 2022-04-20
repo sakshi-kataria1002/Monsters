@@ -1,11 +1,12 @@
 import './search.styles.css'
-const Search = () => {
+const Search = ({changing}) => {
     return (
         <>
             <input
                 className="search-box"
                 type="text"
                 placeholder="Search Monsters"
+                onChange={changing}
             />
         </>
     )
